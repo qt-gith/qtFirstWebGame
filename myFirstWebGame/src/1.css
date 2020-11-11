@@ -1,0 +1,227 @@
+html,body{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial,verdana, sans-serif;
+}
+.ul{
+    width: 100vw;
+    height: 35vh;
+}
+.playBlock{
+    display: none;
+    width: 25%;
+    height: 25vh;
+    float: left;
+}
+.playCardBlock{
+    background-color: yellow;
+    height: 65px;
+    width: 250px;
+    position: relative;
+    top:20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.player{
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 25%;/*要设置宽度，因为块级元素默认宽度100%，不继承父类宽度；而高度不需要*/
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;/*不能使用absolute，因为它基于最近定位了的父亲元素；因为上面父级样式没有定位，故绝对定位会相对与body定位，而不是它的父级样式*/
+    /*语法：
+    正确的是：只要父级元素设了position并且不是static（默认既是static），那么设定了absolute的子元素即以此为包含块（最近的）。
+    绝对定位（Absolute positioning）元素定位的参照物是其包含块，既相对于其包含块进行定位，不一定是其父元素。
+    */
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top: 10px;
+}
+.player:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+.resultoutput{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+    position: relative;
+    top:20px;
+    left:50%;
+    width:250px;
+    height: 40px;
+    transform: translateX(-50%);
+}
+.myresultoutput{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+    position: absolute;
+    top:93%;
+    left:50%;
+    width:250px;
+    height: 40px;
+    transform: translateX(-50%);
+}
+.myCardBlock{
+    display: none;
+    background-color: yellow;
+    height: 65px;
+    width: 250px;
+    position: absolute;
+    top:84%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tipOfMyCard{
+    display: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    width:10%;
+    position: absolute;
+    top:85%;
+    left: 35%;
+    transform:translateX(-50%);
+}
+.button {
+    background-color: rgba(255,50,150,1);
+    border: none;
+    font-size: 18px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.button:hover {
+    background-color: rgba(255,30,80,1);
+}
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20vw;
+    transform: translate(-50%,-50%);
+}
+.washcard{
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left: 42%;
+    width: 7vw;
+    transform: translateX(-50%);
+}
+.givecard{
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left: 53%;
+    width: 7vw;
+    transform: translateX(-50%);
+}
+.result{
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left:50%;
+    width:10vw;
+    transform: translateX(-50%);
+}
+.exchange{
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left:40%;
+    width:10vw;
+    transform: translateX(-50%);
+}
+.reexchange{
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left:60%;
+    width:10vw;
+    transform: translateX(-50%);
+}
+.output{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    top:51%;
+    left:50%;
+    width:20vw;
+    transform: translateX(-50%);
+}
+.startCardsBlock{
+    display: none;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 130px;
+    width: 1300px;
+}
+.poker{
+    margin: 2px 5px;
+    background-color: #85D0ED;
+    border-radius: 2px;
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    color: black;
+    float: left;
+}
+.poker:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+.value{
+    position: relative;
+    top:25%;
+    left: 15%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.flower{
+    float: right;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.welcome{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    line-height: 200px;
+    font-size: 200px;
+    font-weight: 900;
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+}
